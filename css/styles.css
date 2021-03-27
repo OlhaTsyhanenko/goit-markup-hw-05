@@ -131,11 +131,6 @@ img {
   text-decoration: none;
 }
 
-.coordinates .icon {
-  fill: currentColor;
-  margin-right: 10px;
-}
-
 .site-nav .link:hover,
 .site-nav .link:focus,
 .coordinates .link:hover,
@@ -143,8 +138,9 @@ img {
   color: var(--accent-color);
 }
 
-.header-page {
-  border-bottom: 1px solid #ececec;
+.coordinates .icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 .item-envelope .link {
@@ -155,12 +151,14 @@ img {
 .coordinates .link:focus {
   fill: currentColor;
 }
+.header-page {
+  border-bottom: 1px solid #ececec;
+}
 
 /* Hero */
 
 .overlay {
   max-width: 1600px;
-  /*height: 600px;*/
   padding: 300 0;
   margin-left: auto;
   margin-right: auto;
@@ -373,7 +371,8 @@ img {
   fill: var(--text-color-svg);
 }
 
-.clients-list .link:hover {
+.clients-list .link:hover,
+.clients-list .link:focus {
   border-color: var(--accent-color);
   fill: var(--accent-color);
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
