@@ -77,8 +77,6 @@ img {
 .site-nav {
   display: flex;
   margin-left: 93px;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .site-nav .item + .item {
@@ -88,8 +86,6 @@ img {
 .coordinates {
   display: flex;
   margin-left: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .coordinates .item + .item {
@@ -114,10 +110,24 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-nav .link.current {
   color: var(--accent-color);
+  position: relative;
+}
+
+.site-nav .link.current::after {
+  position: absolute;
+  bottom: -1px;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 4px;
+  background-color: currentColor;
+  border-radius: 2px;
 }
 
 .coordinates .link {
@@ -151,6 +161,7 @@ img {
 .coordinates .link:focus {
   fill: currentColor;
 }
+
 .header-page {
   border-bottom: 1px solid #ececec;
 }
