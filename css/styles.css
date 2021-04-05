@@ -665,6 +665,12 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .modal {
   position: absolute;
   top: 50%;
@@ -679,17 +685,20 @@ img {
   border-radius: 4px;
 }
 
-.btn-close {
+.modal .btn-close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
   width: 30px;
   height: 30px;
   padding: 0;
-  border-radius: 50%;
-  background-color: transparent;
   border: none;
+  border-radius: 50%;
+  /* background-color: transparent; */
   background-image: url(../images/close.svg);
 }
 
-.btn-close:hover,
-.btn-close:focus {
+.modal .btn-close:hover,
+.modal .btn-close:focus {
   outline: none;
 }
