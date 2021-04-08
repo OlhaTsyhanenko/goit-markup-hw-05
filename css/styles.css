@@ -489,7 +489,7 @@ img {
 
 .thumb .description {
   position: absolute;
-  top: 0;
+  top: 100%;
   left: 0;
   width: 100%;
   height: 100%;
@@ -507,7 +507,7 @@ img {
 
 .portfolio-link:hover .thumb .description,
 .portfolio-link:focus .thumb .description {
-  transform: translateY(0);
+  transform: translateY(-100%);
 }
 /* buton */
 
